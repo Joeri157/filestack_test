@@ -34,7 +34,7 @@ def add_upload():
             "uploaded_by": ""
             }
         mongo.db.test.insert_one(upload)
-        flash("Congratulations, well done was succesfull!")
+        flash("Congratulations, well done as succesfull!")
         return redirect(request.referrer)
 
     return render_template("index.html", tests=tests)
